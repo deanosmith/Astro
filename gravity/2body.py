@@ -12,7 +12,8 @@ BODY_RADIUS = 5  # Radius of the bodies (used for collision detection)
 # Body properties (position, velocity, mass)
 bodies = [
     {
-        "pos": math.Vector2(WIDTH / 3, HEIGHT / 2),
+        # "pos": math.Vector2(WIDTH / 3, HEIGHT / 2),
+        "pos": math.Vector2(267, 300),
         "vel": math.Vector2(0, -0.06),
         "mass": 1,  # mass of the body
         "trail": [],
@@ -20,7 +21,8 @@ bodies = [
         "collided": False  # flag to check if this body has collided
     },
     {
-        "pos": math.Vector2(1.5 * WIDTH / 3, HEIGHT / 2),
+        # "pos": math.Vector2(1.5 * WIDTH / 3, HEIGHT / 2),
+        "pos": math.Vector2(400, 300),
         "vel": math.Vector2(0, 0.05),
         "mass": 1,  # mass of the body
         "trail": [],
