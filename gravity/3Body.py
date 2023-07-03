@@ -4,15 +4,15 @@ import pygame.math as math
 
 # Constants for our simulation
 # Window size
-WIDTH, HEIGHT = 3000, 1500
+WIDTH, HEIGHT = 800, 600
 # Frames per second - this determines the "speed" of our simulation
-FPS = 120
+FPS = 1000
 # Gravitational constant for our simulation
 G = 1
 # Length of the trail
 TRAIL_LENGTH = 1000
 # Increase the flow of time
-TIME_SPEED = 10
+TIME_SPEED = 2 
 # Radius of the bodies (used for collision detection)
 BODY_RADIUS = 5
 
@@ -20,31 +20,31 @@ BODY_RADIUS = 5
 bodies = [
     {
         # "pos": math.Vector2(WIDTH / 3, HEIGHT / 2),
-        "pos": math.Vector2(1550, 1000),
-        "vel": math.Vector2(0, -0.4),
-        "mass": 50,  # mass of the body
+        "pos": math.Vector2(267, 300),
+        "vel": math.Vector2(0, -0.06),
+        "mass": 1.5,  # mass of the body
         "trail": [],
         "color": (255, 0, 0),
         "collided": False  # flag to check if this body has collided
-    }
-    ,{
-        # "pos": math.Vector2(WIDTH / 3 + 100, HEIGHT / 2),
-        "pos": math.Vector2(1650, 1000),
+    },
+    {
+        # "pos": math.Vector2(1.5 * WIDTH / 3, HEIGHT / 2),
+        "pos": math.Vector2(400, 300),
         "vel": math.Vector2(0, 0.05),
-        "mass": 2,  # mass of the body
+        "mass": 1,  # mass of the body
         "trail": [],
         "color": (0, 255, 0),
         "collided": False  # flag to check if this body has collided
+    },
+    {
+        # "pos": math.Vector2(1.5 * WIDTH / 3, HEIGHT / 2),
+        "pos": math.Vector2(350, 200),
+        "vel": math.Vector2(0, 0.12),
+        "mass": 2,  # mass of the body
+        "trail": [],
+        "color": (0, 0, 255),
+        "collided": False  # flag to check if this body has collided
     }
-    # ,{
-    #     # "pos": math.Vector2(1.5 * WIDTH / 3, HEIGHT / 2),
-    #     "pos": math.Vector2(350, 200),
-    #     "vel": math.Vector2(0, 0.12),
-    #     "mass": 2,  # mass of the body
-    #     "trail": [],
-    #     "color": (0, 0, 255),
-    #     "collided": False  # flag to check if this body has collided
-    # }
 ]
 
 # Initialize Pygame
