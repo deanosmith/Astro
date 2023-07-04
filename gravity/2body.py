@@ -20,18 +20,18 @@ BODY_RADIUS = 5
 bodies = [
     {
         # "pos": math.Vector2(WIDTH / 3, HEIGHT / 2),
-        "pos": math.Vector2(1550, 1000),
-        "vel": math.Vector2(0, -0.4),
-        "mass": 50,  # mass of the body
+        "pos": math.Vector2(1500, 800),
+        "vel": math.Vector2(0, -0.2),
+        "mass": 20,  # mass of the body
         "trail": [],
         "color": (255, 0, 0),
         "collided": False  # flag to check if this body has collided
     }
     ,{
         # "pos": math.Vector2(WIDTH / 3 + 100, HEIGHT / 2),
-        "pos": math.Vector2(1650, 1000),
-        "vel": math.Vector2(0, 0.05),
-        "mass": 2,  # mass of the body
+        "pos": math.Vector2(1700, 600),
+        "vel": math.Vector2(0, 0.2),
+        "mass": 20,  # mass of the body
         "trail": [],
         "color": (0, 255, 0),
         "collided": False  # flag to check if this body has collided
