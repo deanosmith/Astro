@@ -6,13 +6,13 @@ import pygame.math as math
 # Window size
 WIDTH, HEIGHT = 1000, 600
 # Frames per second - this determines the "speed" of our simulation
-FPS = 1000
+FPS = 100
 # Gravitational constant for our simulation
 G = 1
 # Length of the trail
 TRAIL_LENGTH = 1000
 # Increase the flow of time
-TIME_SPEED = 10
+TIME_SPEED = 5
 # Radius of the bodies (used for collision detection)
 BODY_RADIUS = 5
 
@@ -26,7 +26,7 @@ bodies = [
         "color": (255, 0, 0),
     },
     {
-        "pos": math.Vector2(2 * WIDTH / 3, HEIGHT / 2),  # initial position
+        "pos": math.Vector2(1.5 * WIDTH / 3, HEIGHT / 2),  # initial position
         "vel": math.Vector2(0, 0.3),
         "mass": 20,  # mass of the body
         "trail": [],
@@ -48,7 +48,7 @@ frame_count = 1
 running = True
 while running:
     # Calculate time delta
-    dt = clock.tick(FPS) / 1000  # time since last frame in seconds
+    dt = clock.tick(FPS) / 5  # time since last frame in seconds
     
     # Check for events
     for event in pygame.event.get():
